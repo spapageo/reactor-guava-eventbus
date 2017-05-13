@@ -74,7 +74,6 @@
         <junit.version>4.12</junit.version>
         <byte-buddy.version>1.6.0</byte-buddy.version>
         <guava.version>21.0</guava.version>
-        <jsr305.version>3.0.2</jsr305.version>
         <mockito.version>2.7.22</mockito.version>
     </properties>
 
@@ -114,4 +113,14 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.eluder.coveralls</groupId>
+                <artifactId>coveralls-maven-plugin</artifactId>
+                <version>4.3.0</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>
