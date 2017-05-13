@@ -50,9 +50,13 @@ public final class ReactorEventBusHelper {
 
 
     /**
-     * @see #listenFor(Class, OverflowStrategy)
-     * @param eventClass the class of the events that will be propagated though the returned flux
-     * @param <T>        the type of the event
+     * <p>
+     * Registers a new listener with the {@link EventBus} of type {@code eventClass}. A copy of all events of this
+     * types are propagated through the flux.
+     * </p>
+     *
+     * @param eventClass       the class of the events that will be propagated though the returned flux
+     * @param <T>              the type of the event
      * @return the flux of events
      */
     public <T> Flux<T> listenFor(Class<T> eventClass) {
@@ -63,9 +67,6 @@ public final class ReactorEventBusHelper {
      * <p>
      * Registers a new listener with the {@link EventBus} of type {@code eventClass}. A copy of all events of this
      * types are propagated through the flux.
-     * </p>
-     * <p>
-     *
      * </p>
      *
      * @param eventClass       the class of the events that will be propagated though the returned flux
