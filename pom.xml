@@ -30,6 +30,7 @@
     <groupId>com.github.spapageo.reactor</groupId>
     <artifactId>reactor-guava-eventbus</artifactId>
     <version>0.1.0.BETA</version>
+    <name>Reactor-Guava Event-Bus</name>
     <description>A binding library that enables getting fluxes of events from the guava event bus.</description>
     <packaging>jar</packaging>
     <url>http://github.com/spapageo/reactor-guava-eventbus</url>
